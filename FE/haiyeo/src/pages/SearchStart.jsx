@@ -8,7 +8,7 @@ function SearchStart() {
   };
 
   return (
-    <div>
+    <div className="w-[512px] bg-red-100">
       <div>
         <div>
           <span className="text-[#3EC6C9]">하나</span>

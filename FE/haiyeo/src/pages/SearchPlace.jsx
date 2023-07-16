@@ -1,15 +1,22 @@
 import React from "react";
-import { Navigate, useNavigate } from "react-router-dom";
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 function SearchPlace() {
   const navigate = useNavigate();
+
+  const [search, setSearch] = useState("");
+  const onChange = (e) => {
+    setSearch(e.target.value);
+    console.log(search);
+  };
 
   const moveToSche = () => {
     navigate("/search/schedule");
   };
 
   return (
-    <div>
+    <div className="w-[512px] bg-red-100">
       <div>
         <div>
           <span>지구를 위한 </span>
@@ -20,7 +27,9 @@ function SearchPlace() {
           <span>어디로 떠나볼까요?</span>
         </div>
       </div>
-      <div>검색창</div>
+      <div>
+        <input type="text" value={search} onChange={onChange} placeholder="플레이스홀더" />
+      </div>
 
       <div>
         <div>~~에서 ~~하는 ~~여행은 어때요?</div>

@@ -1,11 +1,16 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import { useState } from "react";
+import Calendar from "react-calendar";
 
 function SearchSchedule() {
+  const [dateValue, setDateValue] = useState(new Date());
+
   const navigate = useNavigate();
   const moveToResult = () => {
     navigate("/result");
   };
+
   return (
     <div>
       <div>
@@ -16,7 +21,9 @@ function SearchSchedule() {
         </div>
         <div>언제 떠나볼까요?</div>
       </div>
-      <div>달력</div>
+      <div>
+        <Calendar onChange={setDateValue} value={dateValue} />
+      </div>
 
       <div>
         <div></div>
