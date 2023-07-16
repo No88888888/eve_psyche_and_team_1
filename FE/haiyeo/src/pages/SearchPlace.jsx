@@ -11,8 +11,14 @@ function SearchPlace() {
   return (
     <div>
       <div>
-        <div>지구를 위한 초록색 여정</div>
-        <div>어디로 떠나볼까요?</div>
+        <div>
+          <span>지구를 위한 </span>
+          <span className="text-[#3EC6C9]">초록색</span>
+          <span> 여정</span>
+        </div>
+        <div>
+          <span>어디로 떠나볼까요?</span>
+        </div>
       </div>
       <div>검색창</div>
 
@@ -20,10 +26,15 @@ function SearchPlace() {
         <div>~~에서 ~~하는 ~~여행은 어때요?</div>
         <div>
           <div>
-            <p>떠나요</p>
-            <p>부산!</p>
+            <span>떠나요</span>
+            <span className="text-[#3EC6C9] font-bold">부산!</span>
           </div>
-          <div onClick={moveToSche}>다음</div>
+          <button
+            className="w-[500px] h-20 bg-[#3EC6C9] rounded-md text-white"
+            onClick={moveToSche}
+          >
+            다음
+          </button>
         </div>
       </div>
     </div>

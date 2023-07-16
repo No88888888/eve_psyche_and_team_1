@@ -9,14 +9,23 @@ function SearchSchedule() {
   return (
     <div>
       <div>
-        <div>우리를 위한 초록색 여행,</div>
+        <div>
+          <span>우리를 위한 </span>
+          <span className="text-[#3EC6C9]">초록색</span>
+          <span> 여행,</span>
+        </div>
         <div>언제 떠나볼까요?</div>
       </div>
       <div>달력</div>
 
       <div>
         <div></div>
-        <div onClick={moveToResult}>출발</div>
+        <button
+          className="w-[500px] h-20 bg-[#3EC6C9] rounded-md text-white"
+          onClick={moveToResult}
+        >
+          출발
+        </button>
       </div>
     </div>
   );
