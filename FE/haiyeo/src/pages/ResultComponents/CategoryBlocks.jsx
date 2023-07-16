@@ -9,11 +9,11 @@ function CategoryBlocks() {
       <div>
         <div className="">해운대 하나펜션</div>
         <div className="text-[#898989]">해운대 걸어서 5분, 국내 최초 친환경 숙박 인증</div>
-        <div clasName="grid grid-cols-3">
+        <div clasName="grid grid-cols-2">
           <div className="col-span-1 bg-red-200 w-10">
             <img className="w-4" alt="starRate" src="img/star.png" />
           </div>
-          <div className="col-span-1">4.6</div>
+          <div className="col-span-1 bg-slate-500 w-20">4.6</div>
         </div>
       </div>
     </div>

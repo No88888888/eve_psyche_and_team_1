@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 
 function Stamp() {
   const navigate = useNavigate();
@@ -7,11 +8,21 @@ function Stamp() {
     navigate("/rewardshop");
   };
 
+  const [count, setCount] = useState(2);
+
+  const addCount = () => {
+    setCount(count + 1);
+  };
+
   return (
     <div className="w-[512px]">
-      <div className="w-[512px] bg-[#F3FFC5] pb-8">
+      <div className="w-[512px] bg-[#F3FFC5] pb-10 pt-20">
         <div>
-          <img className="w-[200px]" alt="hanaEarth" src="/img/hana_earth.png" />
+          <img
+            className="w-[200px] absolute mt-[-40px] ml-6"
+            alt="hanaEarth"
+            src="/img/hana_earth.png"
+          />
         </div>
         <div className="bg-white rounded-xl grid grid-cols-5 w-[460px] mx-auto pt-4 pb-2">
           <div className="col-span-2"></div>
@@ -25,119 +36,160 @@ function Stamp() {
           </div>
         </div>
       </div>
-      <div className="flex flex-row-reverse w-[460px] mx-auto">
-        <div className="py-5">나의 리워드 교환권 : 2개</div>
-      </div>
+      <div className=" w-[460px] mx-auto">
+        <div className="flex flex-row-reverse mx-auto">
+          <div className="pt-5 font-semibold text-lg">나의 리워드 교환권 : {count}개</div>
+        </div>
 
-      <div>
         <div>
-          <div className="grid grid-cols-2 mx-auto w-[460px]">
-            <div className="font-bold">숙박</div>
-            <div className="flex flex-row-reverse">
-              <button className="">보상받기</button>
+          <div>
+            <div className="grid grid-cols-2 mx-auto w-[460px] my-2 pt-4">
+              <div className=" font-semibold text-lg">숙박</div>
+              <div className="flex flex-row-reverse">
+                <button className="rounded-lg w-24 border border-[#D9D9D9] text-[#878787]">
+                  보상받기
+                </button>
+              </div>
+            </div>
+            <div className="bg-[#ECFAFA] w-[460px] h-20 mx-auto rounded-lg grid grid-cols-5 pt-3">
+              <div>
+                <img className="w-16 mx-auto" alt="starboy" src="img/starStarboy.png" />
+              </div>
+              <div>
+                <img className="w-16 mx-auto" alt="starboy" src="img/starStarboy.png" />
+              </div>
+              <div>
+                <img className="w-14 pt-2 mx-auto" alt="bstarboy" src="img/baldStarboy.png" />
+              </div>
+              <div>
+                <img className="w-14 pt-2 mx-auto" alt="bstarboy" src="img/baldStarboy.png" />
+              </div>
+              <div>
+                <img className="w-14 pt-2 mx-auto" alt="bstarboy" src="img/baldStarboy.png" />
+              </div>
             </div>
           </div>
-          <div className="bg-[#ECFAFA] w-[460px] h-20 mx-auto rounded-lg grid grid-cols-5 pt-3">
-            <div>
-              <img className="w-16 mx-auto" alt="starboy" src="img/starStarboy.png" />
+          <div>
+            <div className="grid grid-cols-2 mx-auto w-[460px] my-2 pt-4">
+              <div className=" font-semibold text-lg">교통</div>
+              <div className="flex flex-row-reverse">
+                <button className="rounded-lg w-24 border border-[#D9D9D9] text-[#878787]">
+                  보상받기
+                </button>
+              </div>
             </div>
-            <div>
-              <img className="w-16 mx-auto" alt="starboy" src="img/starStarboy.png" />
-            </div>
-            <div>
-              <img className="w-14 pt-2 mx-auto" alt="bstarboy" src="img/baldStarboy.png" />
-            </div>
-            <div>
-              <img className="w-14 pt-2 mx-auto" alt="bstarboy" src="img/baldStarboy.png" />
-            </div>
-            <div>
-              <img className="w-14 pt-2 mx-auto" alt="bstarboy" src="img/baldStarboy.png" />
-            </div>
-          </div>
-        </div>
-        <div>
-          <div className="grid grid-cols-2 mx-auto w-[460px]">
-            <div className="font-bold">교통</div>
-            <div className="flex flex-row-reverse">
-              <button className="">보상받기</button>
-            </div>
-          </div>
-          <div className="bg-[#FFFAE9] w-[460px] h-20 mx-auto rounded-lg grid grid-cols-5 pt-3">
-            <div>
-              <img className="w-16 mx-auto" alt="starboy" src="img/starStarboy.png" />
-            </div>
-            <div>
-              <img className="w-14 pt-2 mx-auto" alt="bstarboy" src="img/baldStarboy.png" />
-            </div>
-            <div>
-              <img className="w-14 pt-2 mx-auto" alt="bstarboy" src="img/baldStarboy.png" />
-            </div>
-            <div>
-              <img className="w-14 pt-2 mx-auto" alt="bstarboy" src="img/baldStarboy.png" />
-            </div>
-            <div>
-              <img className="w-14 pt-2 mx-auto" alt="bstarboy" src="img/baldStarboy.png" />
+            <div className="bg-[#FFFAE9] w-[460px] h-20 mx-auto rounded-lg grid grid-cols-5 pt-3">
+              <div>
+                <img className="w-16 mx-auto" alt="starboy" src="img/starStarboy.png" />
+              </div>
+              <div>
+                <img className="w-14 pt-2 mx-auto" alt="bstarboy" src="img/baldStarboy.png" />
+              </div>
+              <div>
+                <img className="w-14 pt-2 mx-auto" alt="bstarboy" src="img/baldStarboy.png" />
+              </div>
+              <div>
+                <img className="w-14 pt-2 mx-auto" alt="bstarboy" src="img/baldStarboy.png" />
+              </div>
+              <div>
+                <img className="w-14 pt-2 mx-auto" alt="bstarboy" src="img/baldStarboy.png" />
+              </div>
             </div>
           </div>
-        </div>
-        <div>
-          <div className="grid grid-cols-2 mx-auto w-[460px]">
-            <div className="font-bold">먹을거리</div>
-            <div className="flex flex-row-reverse">
-              <button className="">보상받기</button>
-            </div>
-          </div>
-          <div className="bg-[#ECFAFA] w-[460px] h-20 mx-auto rounded-lg grid grid-cols-5 pt-3">
+          {count === 2 ? (
             <div>
-              <img className="w-16 mx-auto" alt="starboy" src="img/starStarboy.png" />
+              <div className="grid grid-cols-2 mx-auto w-[460px] my-2 pt-4">
+                <div className=" font-semibold text-lg">먹을거리</div>
+                <div className="flex flex-row-reverse">
+                  <button className="rounded-lg w-24 bg-[#8CC93E] text-white" onClick={addCount}>
+                    보상받기
+                  </button>
+                </div>
+              </div>
+              <div className="bg-[#ECFAFA] w-[460px] h-20 mx-auto rounded-lg grid grid-cols-5 pt-3">
+                <div>
+                  <img className="w-16 mx-auto" alt="starboy" src="img/starStarboy.png" />
+                </div>
+                <div>
+                  <img className="w-16 mx-auto" alt="starboy" src="img/starStarboy.png" />
+                </div>
+                <div>
+                  <img className="w-16 mx-auto" alt="starboy" src="img/starStarboy.png" />
+                </div>
+                <div>
+                  <img className="w-16 mx-auto" alt="starboy" src="img/starStarboy.png" />
+                </div>
+                <div>
+                  <img className="w-16 mx-auto" alt="starboy" src="img/starStarboy.png" />
+                </div>
+              </div>
             </div>
+          ) : (
             <div>
-              <img className="w-16 mx-auto" alt="starboy" src="img/starStarboy.png" />
+              <div className="grid grid-cols-2 mx-auto w-[460px] my-2 pt-4">
+                <div className=" font-semibold text-lg">먹을거리</div>
+                <div className="flex flex-row-reverse">
+                  <button className="rounded-lg w-24 border border-[#D9D9D9] text-[#878787]">
+                    보상받기
+                  </button>
+                </div>
+              </div>
+              <div className="bg-[#ECFAFA] w-[460px] h-20 mx-auto rounded-lg grid grid-cols-5 pt-3">
+                <div>
+                  <img className="w-14 pt-2 mx-auto" alt="bstarboy" src="img/baldStarboy.png" />
+                </div>
+                <div>
+                  <img className="w-14 pt-2 mx-auto" alt="bstarboy" src="img/baldStarboy.png" />
+                </div>
+                <div>
+                  <img className="w-14 pt-2 mx-auto" alt="bstarboy" src="img/baldStarboy.png" />
+                </div>
+                <div>
+                  <img className="w-14 pt-2 mx-auto" alt="bstarboy" src="img/baldStarboy.png" />
+                </div>
+                <div>
+                  <img className="w-14 pt-2 mx-auto" alt="bstarboy" src="img/baldStarboy.png" />
+                </div>
+              </div>
             </div>
-            <div>
-              <img className="w-16 mx-auto" alt="starboy" src="img/starStarboy.png" />
-            </div>
-            <div>
-              <img className="w-16 mx-auto" alt="starboy" src="img/starStarboy.png" />
-            </div>
-            <div>
-              <img className="w-16 mx-auto" alt="starboy" src="img/starStarboy.png" />
-            </div>
-          </div>
-        </div>
-        <div>
-          <div className="grid grid-cols-2 mx-auto w-[460px]">
-            <div className="font-bold">액티비티</div>
-            <div className="flex flex-row-reverse">
-              <button className="">보상받기</button>
-            </div>
-          </div>
-          <div className="bg-[#FFFAE9] w-[460px] h-20 mx-auto rounded-lg grid grid-cols-5 pt-3">
-            <div>
-              <img className="w-16 mx-auto" alt="starboy" src="img/starStarboy.png" />
-            </div>
-            <div>
-              <img className="w-14 pt-2 mx-auto" alt="bstarboy" src="img/baldStarboy.png" />
-            </div>
-            <div>
-              <img className="w-14 pt-2 mx-auto" alt="bstarboy" src="img/baldStarboy.png" />
-            </div>
-            <div>
-              <img className="w-14 pt-2 mx-auto" alt="bstarboy" src="img/baldStarboy.png" />
-            </div>
-            <div>
-              <img className="w-14 pt-2 mx-auto" alt="bstarboy" src="img/baldStarboy.png" />
-            </div>
-          </div>
-        </div>
-      </div>
+          )}
 
-      <button
-        className="w-[460px] h-20 bg-[#3EC6C9] rounded-md text-white mb-20 mt-16"
-        onClick={moveToShop}
-      >
-        리워드 받기
-      </button>
+          <div>
+            <div className="grid grid-cols-2 mx-auto w-[460px] my-2 pt-4">
+              <div className=" font-semibold text-lg">액티비티</div>
+              <div className="flex flex-row-reverse">
+                <button className="rounded-lg w-24 border border-[#D9D9D9] text-[#878787]">
+                  보상받기
+                </button>
+              </div>
+            </div>
+            <div className="bg-[#FFFAE9] w-[460px] h-20 mx-auto rounded-lg grid grid-cols-5 pt-3">
+              <div>
+                <img className="w-16 mx-auto" alt="starboy" src="img/starStarboy.png" />
+              </div>
+              <div>
+                <img className="w-14 pt-2 mx-auto" alt="bstarboy" src="img/baldStarboy.png" />
+              </div>
+              <div>
+                <img className="w-14 pt-2 mx-auto" alt="bstarboy" src="img/baldStarboy.png" />
+              </div>
+              <div>
+                <img className="w-14 pt-2 mx-auto" alt="bstarboy" src="img/baldStarboy.png" />
+              </div>
+              <div>
+                <img className="w-14 pt-2 mx-auto" alt="bstarboy" src="img/baldStarboy.png" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button
+          className="w-full h-16 bg-[#3EC6C9] rounded-md text-white mb-20 mt-16"
+          onClick={moveToShop}
+        >
+          리워드 받기
+        </button>
+      </div>
     </div>
   );
 }

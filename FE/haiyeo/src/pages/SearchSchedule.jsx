@@ -10,9 +10,17 @@ function SearchSchedule() {
   const moveToResult = () => {
     navigate("/result");
   };
+  const moveToBack = () => {
+    navigate(-1);
+  };
 
   return (
-    <div>
+    <div className="w-[512px]">
+      <div className="pt-8 flex flex-row-reverse">
+        <button onClick={moveToBack}>
+          <img className="w-5" alt="뒤로가기" src="img/arrow.png" />
+        </button>
+      </div>
       <div>
         <div>
           <span>우리를 위한 </span>
@@ -28,7 +36,7 @@ function SearchSchedule() {
       <div>
         <div></div>
         <button
-          className="w-[500px] h-20 bg-[#3EC6C9] rounded-md text-white"
+          className="w-[500px] h-16 bg-[#3EC6C9] rounded-md text-white"
           onClick={moveToResult}
         >
           출발

@@ -33,7 +33,7 @@ function Result() {
     <div className="w-[512px]">
       <div className="w-10/12 mx-auto">
         <div className="grid grid-cols-2">
-          <div className="pt-5">
+          <div className="pt-8">
             <span className="text-[#3EC6C9] font-bold text-4xl">부산</span>
             <span className="text-[#898989]"> 으로의 ECO 여행</span>
           </div>
@@ -43,7 +43,7 @@ function Result() {
             </button>
           </div>
         </div>
-        <div className="text-xl ml-1"> 8월 15일(수) ~ 8월 16일(목)</div>
+        <div className="text-2xl ml-1"> 8월 15일(수) ~ 8월 16일(목)</div>
       </div>
       <div className="w-11/12 mx-auto grid grid-cols-4 text-[#898989] mt-10">
         <button onClick={() => changeCatetory("Lodge")}>
