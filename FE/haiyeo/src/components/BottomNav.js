@@ -20,12 +20,12 @@ function BottomNav() {
           {activeNav === 1 ? (
             <div className="grid">
               <FontAwesomeIcon icon={faHouse} color="#3ec6c9" size="2x" />
-              <span className="text-sm mx-auto">홈</span>
+              <span className="text-sm mx-auto text-[#3ec6c9]">홈</span>
             </div>
           ) : (
             <div className="grid">
               <FontAwesomeIcon icon={faHouse} color="#ababab" size="2x" />
-              <span className="text-sm mx-auto">홈</span>
+              <span className="text-sm mx-auto text-[#ababab]">홈</span>
             </div>
           )}
         </NavLink>
@@ -37,14 +37,14 @@ function BottomNav() {
               <div className="mx-auto">
                 <FontAwesomeIcon icon={faStamp} color="#3ec6c9" size="2x" />
               </div>
-              <span className="text-sm mx-auto">스탬프</span>
+              <span className="text-sm mx-auto text-[#3ec6c9]">스탬프</span>
             </div>
           ) : (
             <div className="grid">
               <div className="mx-auto">
                 <FontAwesomeIcon icon={faStamp} color="#ababab" size="2x" />
               </div>
-              <span className="text-sm mx-auto">스탬프</span>
+              <span className="text-sm mx-auto text-[#ababab]">스탬프</span>
             </div>
           )}
         </NavLink>
@@ -53,7 +53,7 @@ function BottomNav() {
         <div className="mx-auto mb-[-28px]">
           <FontAwesomeIcon icon={faQrcode} color="#ababab" size="2x" />
         </div>
-        <span className="text-sm mx-auto">QR스캔</span>
+        <span className="text-sm mx-auto text-[#ababab]">QR스캔</span>
       </div>
       <div>
         <NavLink to="/rewardshop" onClick={() => setActiveNav(3)}>
@@ -62,14 +62,14 @@ function BottomNav() {
               <div className="mx-auto">
                 <FontAwesomeIcon icon={faGift} color="#3ec6c9" size="2x" />
               </div>
-              <span className="text-sm mx-auto">리워드샵</span>
+              <span className="text-sm mx-auto text-[#3ec6c9]">리워드샵</span>
             </div>
           ) : (
             <div className="grid">
               <div className="mx-auto">
                 <FontAwesomeIcon icon={faGift} color="#ababab" size="2x" />
               </div>
-              <span className="text-sm mx-auto">리워드샵</span>
+              <span className="text-sm mx-auto text-[#ababab]">리워드샵</span>
             </div>
           )}
         </NavLink>
@@ -81,14 +81,14 @@ function BottomNav() {
               <div className="mx-auto">
                 <FontAwesomeIcon icon={faUser} color="#3ec6c9" size="2x" />
               </div>
-              <span className="text-sm mx-auto">프로필</span>
+              <span className="text-sm mx-auto text-[#3ec6c9]">프로필</span>
             </div>
           ) : (
             <div className="grid">
               <div className="mx-auto">
                 <FontAwesomeIcon icon={faUser} color="#ababab" size="2x" />
               </div>
-              <span className="text-sm mx-auto">프로필</span>
+              <span className="text-sm mx-auto text-[#ababab]">프로필</span>
             </div>
           )}
         </NavLink>
