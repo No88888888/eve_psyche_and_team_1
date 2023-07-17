@@ -1,20 +1,22 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import UsedList from "./ProfileComponents/UsedList";
+import RewardList from "./ProfileComponents/RewardList";
 
 function ProfileDetail() {
-  //   const [list, setList] = useState("Used");
-  //   const changeList = (newList) => {
-  //     setList(newList);
-  //   };
+  const [list, setList] = useState("Used");
+  const changeList = (newList) => {
+    setList(newList);
+  };
 
-  //   const chooseList = () => {
-  //     switch (list) {
-  //       case "Used":
-  //         return <Used />;
-  //       case "Rewarded":
-  //         return <Rewarded />;
-  //     }
-  //   };
+  const chooseList = () => {
+    switch (list) {
+      case "Used":
+        return <UsedList />;
+      case "Rewarded":
+        return <RewardList />;
+    }
+  };
   const navigate = useNavigate();
   const moveToBack = () => {
     navigate(-1);
@@ -28,7 +30,7 @@ function ProfileDetail() {
       </div>
       <div className="mt-[7%] ml-[10%] mb-[5%]">
         <span className="text-[#3EC6C9] text-2xl">hana_ti</span>
-        <span className="text-2xl"> 님의 여행</span>
+        <span className="text-2xl"> 님의 프로필</span>
       </div>
       <div className="bg-[#F9F9F9] rounded-xl w-[80%] h-[75px] mx-auto drop-shadow-md flex">
         <div>
@@ -41,6 +43,25 @@ function ProfileDetail() {
           <span className="text-sm text-[#9A9A9A]">수정</span>
         </div>
       </div>
+      <div className="w-11/12 mx-auto grid grid-cols-2 text-[#898989] mt-[4%]">
+        <button onClick={() => changeList("Used")}>
+          <div className="">이용 내역</div>
+          {list === "Used" ? (
+            <hr className="border-[#3EC6C9] border-2" />
+          ) : (
+            <hr className="bg-[#9A9A9A]" />
+          )}
+        </button>
+        <button onClick={() => changeList("Rewarded")}>
+          <div>리워드 내역</div>
+          {list === "Rewarded" ? (
+            <hr className="border-[#3EC6C9] border-2" />
+          ) : (
+            <hr className="bg-[#9A9A9A]" />
+          )}
+        </button>
+      </div>
+      <div className="w-11/12 mx-auto">{chooseList()}</div>
     </>
   );
 }
