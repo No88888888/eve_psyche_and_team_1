@@ -19,19 +19,19 @@ function SearchStart() {
             <img className="w-5" alt="뒤로가기" src="/img/arrow.png" />
           </button>
         </div>
-        <div className="text-[20px] mt-16">
+        <div className="text-[20px] mt-16  font-sans">
           <div className="my-4">
-            <span className="text-[#3EC6C9]">하나</span>
-            <span>뿐인 소중한 지구</span>
+            <span className="text-[#3EC6C9] font-bold font-sans">하나</span>
+            <span className="font-medium">뿐인 소중한 지구</span>
           </div>
 
           <div className="my-4">
-            <span className="text-[#3EC6C9]">E</span>
-            <span>SG가 함께하는</span>
+            <span className="text-[#3EC6C9] font-bold">E</span>
+            <span className="font-medium">SG가 함께하는</span>
           </div>
           <div className="my-4">
-            <span className="text-[#3EC6C9]">여</span>
-            <span>행으로 지켜요!</span>
+            <span className="text-[#3EC6C9] font-bold">여</span>
+            <span className="font-medium">행으로 지켜요!</span>
           </div>
         </div>
         <div className="mt-10">
@@ -42,7 +42,7 @@ function SearchStart() {
           onClick={moveToPlace}
         >
           <span className="font-bold font-sans">하이여</span>
-          <span> 시작하기</span>
+          <span className=" font-sans"> 시작하기</span>
         </button>
       </div>
     </div>

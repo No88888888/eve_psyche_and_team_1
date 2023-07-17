@@ -22,7 +22,7 @@ function Trans() {
     <div className="w-11/12 mx-auto ">
       <div className="grid grid-cols-3 pt-8 pb-10">
         <div className="bg-[#E3F9FA] rounded-xl h-20 w-5/6  mx-auto font-medium text-[15px]">
-          <div className="ml-4 mt-4 z-50 absolute">
+          <div className="ml-4 mt-4 z-50 absolute font-bold">
             <p>자전거</p>
             <p>여행</p>
           </div>
@@ -33,14 +33,14 @@ function Trans() {
           />
         </div>
         <div className="bg-[#E3F9FA] rounded-xl h-20 w-5/6  mx-auto font-medium text-[15px]">
-          <div className="ml-4 mt-4 absolute z-30">
+          <div className="ml-4 mt-4 absolute z-30 font-bold">
             <p>고속 버스</p>
             <p>여행</p>
           </div>
           <img className="w-20 mt-2 ml-2" alt="고속버스" src="/img/bus.png" />
         </div>
         <div className="bg-[#E3F9FA] rounded-xl h-20 w-5/6  mx-auto font-medium text-[15px]">
-          <div className="ml-4 mt-4 absolute z-30">
+          <div className="ml-4 mt-4 absolute z-30 font-bold">
             <p>기차/KTX</p>
             <p>여행</p>
           </div>

@@ -3,7 +3,7 @@ import React, { useState } from "react";
 function RewardShop() {
   const [coupons, setCoupons] = useState(2);
   return (
-    <div className="w-[100%]">
+    <div className="w-[100%] font-sans">
       <div className="w-[100%] bg-[#B3F3F4] pb-[5%] pt-[6%]">
         <div>
           <img
@@ -41,7 +41,7 @@ function RewardShop() {
       <div className="flex flex-row text-center mb-[10%]">
         <div className="w-[35%] ml-[10%] grid bg-[#EFFFF9] rounded-xl drop-shadow-md">
           <div className="h-[50px]">
-            <span className="text-sm">하나 여행자 보험</span>
+            <span className="text-sm">하나 여행자 보험 </span>
             <span className="text-sm">20% 할인 쿠폰</span>
           </div>
           <div className="h-[80px]">

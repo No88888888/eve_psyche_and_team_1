@@ -6,7 +6,7 @@ import { faComment } from "@fortawesome/free-regular-svg-icons";
 
 function Home() {
   return (
-    <div className="w-[100%]">
+    <div className="w-[100%] font-sans">
       <div className="w-[100%] absolute h-[20%] bg-[#F3FFC5]"></div>
       <div>
         <img
@@ -123,7 +123,6 @@ function Home() {
         </div>
         <img
           className="bg-cover bg-center mt-[3%]"
-
           alt="ddareungi"
           src="/img/ddareungi.jpg"
         />
@@ -186,13 +185,11 @@ function Home() {
         </div>
         <div>
           <span className="ml-[4%] text-sm">
-
             diwlrma 님 외 5774명이 좋아합니다
           </span>
         </div>
         <div>
           <span className="ml-[4%] text-md">
-
             친환경 작물로 만든 친환경 피자 JMT
           </span>
         </div>
