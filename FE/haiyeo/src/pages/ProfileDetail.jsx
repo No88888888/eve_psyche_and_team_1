@@ -1,14 +1,13 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import UsedList from "./ProfileComponents/UsedList";
-import RewardList from "./ProfileComponents/RewardList";
+import Loading from "../components/Loading";
 
 function ProfileDetail() {
   const [list, setList] = useState("Used");
   const changeList = (newList) => {
     setList(newList);
   };
-
   const [modal, setModal] = useState(false);
   const [used, setUsed] = useState(false);
   const openModal = () => setModal(true);
@@ -16,12 +15,22 @@ function ProfileDetail() {
     setUsed(true);
     setModal(false);
   };
+  // 로딩창 무지성 복붙
+  const [loading, setLoading] = useState(true);
+  function stop() {
+    setLoading(false);
+  }
+  useEffect(() => {
+    setTimeout(stop, 1000);
+  }, []);
+
   const navigate = useNavigate();
   const moveToBack = () => {
     navigate(-1);
   };
   return (
     <div className="font-sans">
+      {loading ? <Loading /> : null}
       <div className="absolute ml-[90%] mt-[2%]">
         <button onClick={moveToBack}>
           <img className="w-5" alt="뒤로가기" src="/img/arrow.png" />
