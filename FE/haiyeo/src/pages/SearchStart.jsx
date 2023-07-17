@@ -12,14 +12,14 @@ function SearchStart() {
   };
 
   return (
-    <div className="w-[512px]">
+    <div className="w-[100%]">
       <div className="w-10/12 mx-auto">
         <div className="pt-8 flex flex-row-reverse">
           <button onClick={moveToBack}>
-            <img className="w-5" alt="뒤로가기" src="img/arrow.png" />
+            <img className="w-5" alt="뒤로가기" src="/img/arrow.png" />
           </button>
         </div>
-        <div className="text-[28px] mt-20">
+        <div className="text-[20px] mt-16">
           <div className="my-4">
             <span className="text-[#3EC6C9]">하나</span>
             <span>뿐인 소중한 지구</span>
@@ -34,14 +34,14 @@ function SearchStart() {
             <span>행으로 지켜요!</span>
           </div>
         </div>
-        <div className="mt-12">
-          <img className="w-[400px]" alt="ourEarth" src="img/hana_earth.png" />
+        <div className="mt-10">
+          <img className="w-[300px] mx-auto" alt="ourEarth" src="img/hana_earth.png" />
         </div>
         <button
-          className="w-full h-16 bg-[#3EC6C9] rounded-md text-white mt-8"
+          className="w-full h-10 bg-[#3EC6C9] rounded-md text-white mt-8"
           onClick={moveToPlace}
         >
-          <span className="font-bold">하이여</span>
+          <span className="font-bold font-sans">하이여</span>
           <span> 시작하기</span>
         </button>
       </div>
