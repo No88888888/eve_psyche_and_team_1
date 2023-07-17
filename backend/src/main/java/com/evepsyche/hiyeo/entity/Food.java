@@ -16,5 +16,5 @@ public class Food {
     private String name;
     private String msg;
     private String image;
-    private double rating;
+    private Double rating;
 }
