@@ -30,12 +30,12 @@ function Result() {
   };
 
   return (
-    <div className="w-[512px]">
+    <div className="w-[100%]">
       <div className="w-10/12 mx-auto">
         <div className="grid grid-cols-2">
           <div className="pt-8">
-            <span className="text-[#3EC6C9] font-bold text-4xl">부산</span>
-            <span className="text-[#898989]"> 으로의 ECO 여행</span>
+            <span className="text-[#3EC6C9] font-bold text-3xl">부산</span>
+            <span className="text-[#898989] text-"> 으로의 ECO 여행</span>
           </div>
           <div className="pt-8 flex flex-row-reverse">
             <button onClick={moveToBack}>
