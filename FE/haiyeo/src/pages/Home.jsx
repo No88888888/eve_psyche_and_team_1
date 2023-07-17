@@ -123,8 +123,50 @@ function Home() {
         </div>
         <img
           className="bg-cover bg-center mt-[3%]"
-          alt="snsGoryeong"
-          src="/img/goryeong.jpg"
+          alt="ddareungi"
+          src="/img/ddareungi.jpg"
+        />
+        <div className="flex">
+          <img
+            className="w-[9%] m-[2%] ml-[4%]"
+            alt="like"
+            src="/img/like.png"
+          />
+          <FontAwesomeIcon icon={faComment} size="2x" className="m-[2%]" />
+          <FontAwesomeIcon
+            icon={faMagnifyingGlass}
+            size="2x"
+            color="#777777"
+            className="my-[2%] ml-auto mr-[4%]"
+          />
+        </div>
+        <div>
+          <span className="ml-[4%] text-sm">
+            xxxibgdrgn 님 외 3755명이 좋아합니다
+          </span>
+        </div>
+        <div>
+          <span className="ml-[4%] text-md">
+            따릉이를 타고 다니면서 건강도 챙기고
+          </span>
+        </div>
+        <div>
+          <span className="ml-[4%] text-md">환경도 지키는 일석이조 효과~</span>
+        </div>
+      </div>
+      <div className="mb-[30%]">
+        <div className="flex">
+          <img
+            className="w-[10%] ml-[3%] mr-[1%]"
+            alt="jisoo"
+            src="/img/jisoo.png"
+          />
+          <span className="my-auto">sooyaaa__</span>
+        </div>
+        <img
+          className="bg-cover bg-center mt-[3%]"
+          alt="vegetables"
+          src="/img/vegetables.jpg"
         />
         <div className="flex">
           <FontAwesomeIcon
@@ -143,17 +185,12 @@ function Home() {
         </div>
         <div>
           <span className="ml-[4%] text-sm">
-            hana_ti 님 외 1990명이 좋아합니다
+            diwlrma 님 외 5774명이 좋아합니다
           </span>
         </div>
         <div>
           <span className="ml-[4%] text-md">
-            2023 고령 대가야 축제 X 한국관광공사
-          </span>
-        </div>
-        <div>
-          <span className="ml-[4%] text-md">
-            친환경 여행 캠페인참여하고 선물 받아가세요🎁
+            친환경 작물로 만든 친환경 피자 JMT
           </span>
         </div>
       </div>
