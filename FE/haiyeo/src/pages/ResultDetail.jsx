@@ -7,6 +7,10 @@ function ResultDetail() {
     navigate(-1);
   };
 
+  const moveToRes = () => {
+    navigate("profile");
+  };
+
   const makeReservation = () => {};
 
   return (

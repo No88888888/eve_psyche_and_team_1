@@ -1,10 +1,11 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import Lodge from "./ResultComponents/Lodge";
 import Trans from "./ResultComponents/Trans";
 import Food from "./ResultComponents/Food";
 import Activity from "./ResultComponents/Activity";
+import ResultLoading from "../components/ResultLoading";
 
 function Result() {
   const [category, setCategory] = useState("Lodge");
@@ -29,8 +30,17 @@ function Result() {
     navigate(-1);
   };
 
+  const [loading, setLoading] = useState(true);
+  function stop() {
+    setLoading(false);
+  }
+  useEffect(() => {
+    setTimeout(stop, 2000);
+  }, []);
+
   return (
     <div className="w-[100%] font-sans">
+      {loading ? <ResultLoading /> : null}
       <div className="w-10/12 mx-auto">
         <div className="grid grid-cols-2">
           <div className="pt-8">
