@@ -18,14 +18,14 @@ function BottomNav() {
       <div>
         <NavLink to="/" onClick={() => setActiveNav(1)}>
           {activeNav === 1 ? (
-            <div>
-              <FontAwesomeIcon icon={faHouse} color="#3ec6c9" />
-              <p>홈</p>
+            <div className="grid">
+              <FontAwesomeIcon icon={faHouse} color="#3ec6c9" size="2x" />
+              <span className="text-sm mx-auto text-[#3ec6c9]">홈</span>
             </div>
           ) : (
-            <div>
-              <FontAwesomeIcon icon={faHouse} color="#ababab" />
-              <p>홈</p>
+            <div className="grid">
+              <FontAwesomeIcon icon={faHouse} color="#ababab" size="2x" />
+              <span className="text-sm mx-auto text-[#ababab]">홈</span>
             </div>
           )}
         </NavLink>
@@ -33,33 +33,43 @@ function BottomNav() {
       <div>
         <NavLink to="/stamp" onClick={() => setActiveNav(2)}>
           {activeNav === 2 ? (
-            <div>
-              <FontAwesomeIcon icon={faStamp} color="#3ec6c9" />
-              <p>스탬프</p>
+            <div className="grid">
+              <div className="mx-auto">
+                <FontAwesomeIcon icon={faStamp} color="#3ec6c9" size="2x" />
+              </div>
+              <span className="text-sm mx-auto text-[#3ec6c9]">스탬프</span>
             </div>
           ) : (
-            <div>
-              <FontAwesomeIcon icon={faStamp} color="#ababab" />
-              <p>스탬프</p>
+            <div className="grid">
+              <div className="mx-auto">
+                <FontAwesomeIcon icon={faStamp} color="#ababab" size="2x" />
+              </div>
+              <span className="text-sm mx-auto text-[#ababab]">스탬프</span>
             </div>
           )}
         </NavLink>
       </div>
-      <div>
-        <FontAwesomeIcon icon={faQrcode} color="#ababab" />
-        <p>QR스캔</p>
+      <div className="grid">
+        <div className="mx-auto mb-[-28px]">
+          <FontAwesomeIcon icon={faQrcode} color="#ababab" size="2x" />
+        </div>
+        <span className="text-sm mx-auto text-[#ababab]">QR스캔</span>
       </div>
       <div>
         <NavLink to="/rewardshop" onClick={() => setActiveNav(3)}>
           {activeNav === 3 ? (
-            <div>
-              <FontAwesomeIcon icon={faGift} color="#3ec6c9" />
-              <p>리워드샵</p>
+            <div className="grid">
+              <div className="mx-auto">
+                <FontAwesomeIcon icon={faGift} color="#3ec6c9" size="2x" />
+              </div>
+              <span className="text-sm mx-auto text-[#3ec6c9]">리워드샵</span>
             </div>
           ) : (
-            <div>
-              <FontAwesomeIcon icon={faGift} color="#ababab" />
-              <p>리워드샵</p>
+            <div className="grid">
+              <div className="mx-auto">
+                <FontAwesomeIcon icon={faGift} color="#ababab" size="2x" />
+              </div>
+              <span className="text-sm mx-auto text-[#ababab]">리워드샵</span>
             </div>
           )}
         </NavLink>
@@ -67,14 +77,18 @@ function BottomNav() {
       <div>
         <NavLink to="/profile" onClick={() => setActiveNav(4)}>
           {activeNav === 4 ? (
-            <div>
-              <FontAwesomeIcon icon={faUser} color="#3ec6c9" />
-              <p>프로필</p>
+            <div className="grid">
+              <div className="mx-auto">
+                <FontAwesomeIcon icon={faUser} color="#3ec6c9" size="2x" />
+              </div>
+              <span className="text-sm mx-auto text-[#3ec6c9]">프로필</span>
             </div>
           ) : (
-            <div>
-              <FontAwesomeIcon icon={faUser} color="#ababab" />
-              <p>프로필</p>
+            <div className="grid">
+              <div className="mx-auto">
+                <FontAwesomeIcon icon={faUser} color="#ababab" size="2x" />
+              </div>
+              <span className="text-sm mx-auto text-[#ababab]">프로필</span>
             </div>
           )}
         </NavLink>
