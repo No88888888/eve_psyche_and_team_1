@@ -15,11 +15,11 @@ function Stamp() {
   };
 
   return (
-    <div className="w-[100%]">
-      <div className="w-[100%] bg-[#F3FFC5] pb-6 pt-14">
+    <div className="w-[100%] font-sans">
+      <div className="w-[100%] bg-[#F3FFC5] pb-6 pt-12">
         <div>
           <img
-            className="w-[150px] absolute mt-[-40px] ml-6"
+            className="w-[150px] absolute mt-[-30px] ml-6"
             alt="hanaEarth"
             src="/img/hana_earth.png"
           />
@@ -27,9 +27,9 @@ function Stamp() {
         <div className="bg-white rounded-xl grid grid-cols-5 w-[90%] mx-auto pt-4 pb-2">
           <div className="col-span-2"></div>
           <div className="col-span-3">
-            <div className="font-bold text-xl">GREEN TRACE</div>
+            <div className="text-xl font-extrabold">GREEN TRACE</div>
             <div className="text-xs">
-              <span className="text-[#3EC6C9]">초록색</span>
+              <span className="text-[#3EC6C9] font-bold">초록색</span>
               <span> 발자취를 남기고</span>
             </div>
             <div className="text-xs">나를 위한 리워드도 받아보세요!</div>
@@ -46,7 +46,7 @@ function Stamp() {
             <div className="grid grid-cols-2 mx-auto w-full my-2 pt-4">
               <div className=" font-semibold text-m">숙박</div>
               <div className="flex flex-row-reverse">
-                <button className="rounded-lg w-24 border border-[#D9D9D9] text-[#878787]">
+                <button className="rounded-lg w-20 text-sm border border-[#D9D9D9] text-[#878787]">
                   보상받기
                 </button>
               </div>
@@ -59,13 +59,25 @@ function Stamp() {
                 <img className="w-14 mx-auto" alt="starboy" src="img/starStarboy.png" />
               </div>
               <div>
-                <img className="w-12 pt-2 mx-auto" alt="bstarboy" src="img/baldStarboy.png" />
+                <img
+                  className="w-12 pt-2 mx-auto brightness-75"
+                  alt="bstarboy"
+                  src="img/baldStarboy.png"
+                />
               </div>
               <div>
-                <img className="w-12 pt-2 mx-auto" alt="bstarboy" src="img/baldStarboy.png" />
+                <img
+                  className="w-12 pt-2 mx-auto brightness-75"
+                  alt="bstarboy"
+                  src="img/baldStarboy.png"
+                />
               </div>
               <div>
-                <img className="w-12 pt-2 mx-auto" alt="bstarboy" src="img/baldStarboy.png" />
+                <img
+                  className="w-12 pt-2 mx-auto brightness-75"
+                  alt="bstarboy"
+                  src="img/baldStarboy.png"
+                />
               </div>
             </div>
           </div>
@@ -73,7 +85,7 @@ function Stamp() {
             <div className="grid grid-cols-2 mx-auto w-full my-2 pt-4">
               <div className=" font-semibold text-m">교통</div>
               <div className="flex flex-row-reverse">
-                <button className="rounded-lg w-24 border border-[#D9D9D9] text-[#878787]">
+                <button className="rounded-lg w-20 text-sm border border-[#D9D9D9] text-[#878787]">
                   보상받기
                 </button>
               </div>
@@ -83,16 +95,32 @@ function Stamp() {
                 <img className="w-14 mx-auto" alt="starboy" src="img/starStarboy.png" />
               </div>
               <div>
-                <img className="w-12 pt-2 mx-auto" alt="bstarboy" src="img/baldStarboy.png" />
+                <img
+                  className="w-12 pt-2 mx-auto brightness-75"
+                  alt="bstarboy"
+                  src="img/baldStarboy.png"
+                />
               </div>
               <div>
-                <img className="w-12 pt-2 mx-auto" alt="bstarboy" src="img/baldStarboy.png" />
+                <img
+                  className="w-12 pt-2 mx-auto brightness-75"
+                  alt="bstarboy"
+                  src="img/baldStarboy.png"
+                />
               </div>
               <div>
-                <img className="w-12 pt-2 mx-auto" alt="bstarboy" src="img/baldStarboy.png" />
+                <img
+                  className="w-12 pt-2 mx-auto brightness-75"
+                  alt="bstarboy"
+                  src="img/baldStarboy.png"
+                />
               </div>
               <div>
-                <img className="w-12 pt-2 mx-auto" alt="bstarboy" src="img/baldStarboy.png" />
+                <img
+                  className="w-12 pt-2 mx-auto brightness-75"
+                  alt="bstarboy"
+                  src="img/baldStarboy.png"
+                />
               </div>
             </div>
           </div>
@@ -101,7 +129,10 @@ function Stamp() {
               <div className="grid grid-cols-2 mx-auto w-full my-2 pt-4">
                 <div className=" font-semibold text-m">먹을거리</div>
                 <div className="flex flex-row-reverse">
-                  <button className="rounded-lg w-24 bg-[#8CC93E] text-white" onClick={addCount}>
+                  <button
+                    className="rounded-lg w-20 text-sm bg-[#8CC93E] text-white"
+                    onClick={addCount}
+                  >
                     보상받기
                   </button>
                 </div>
@@ -129,26 +160,46 @@ function Stamp() {
               <div className="grid grid-cols-2 mx-auto w-full my-2 pt-4">
                 <div className=" font-semibold text-m">먹을거리</div>
                 <div className="flex flex-row-reverse">
-                  <button className="rounded-lg w-24 border border-[#D9D9D9] text-[#878787]">
+                  <button className="rounded-lg w-20 text-sm border border-[#D9D9D9] text-[#878787]">
                     보상받기
                   </button>
                 </div>
               </div>
               <div className="bg-[#ECFAFA] w-full h-20 mx-auto rounded-lg grid grid-cols-5 pt-3">
                 <div>
-                  <img className="w-12 pt-2 mx-auto" alt="bstarboy" src="img/baldStarboy.png" />
+                  <img
+                    className="w-12 pt-2 mx-auto brightness-75"
+                    alt="bstarboy"
+                    src="img/baldStarboy.png"
+                  />
                 </div>
                 <div>
-                  <img className="w-12 pt-2 mx-auto" alt="bstarboy" src="img/baldStarboy.png" />
+                  <img
+                    className="w-12 pt-2 mx-auto brightness-75"
+                    alt="bstarboy"
+                    src="img/baldStarboy.png"
+                  />
                 </div>
                 <div>
-                  <img className="w-12 pt-2 mx-auto" alt="bstarboy" src="img/baldStarboy.png" />
+                  <img
+                    className="w-12 pt-2 mx-auto brightness-75"
+                    alt="bstarboy"
+                    src="img/baldStarboy.png"
+                  />
                 </div>
                 <div>
-                  <img className="w-12 pt-2 mx-auto" alt="bstarboy" src="img/baldStarboy.png" />
+                  <img
+                    className="w-12 pt-2 mx-auto brightness-75"
+                    alt="bstarboy"
+                    src="img/baldStarboy.png"
+                  />
                 </div>
                 <div>
-                  <img className="w-12 pt-2 mx-auto" alt="bstarboy" src="img/baldStarboy.png" />
+                  <img
+                    className="w-12 pt-2 mx-auto brightness-75"
+                    alt="bstarboy"
+                    src="img/baldStarboy.png"
+                  />
                 </div>
               </div>
             </div>
@@ -158,7 +209,7 @@ function Stamp() {
             <div className="grid grid-cols-2 mx-auto w-full my-2 pt-4">
               <div className=" font-semibold text-m">액티비티</div>
               <div className="flex flex-row-reverse">
-                <button className="rounded-lg w-24 border border-[#D9D9D9] text-[#878787]">
+                <button className="rounded-lg w-20 text-sm border border-[#D9D9D9] text-[#878787]">
                   보상받기
                 </button>
               </div>
@@ -168,23 +219,39 @@ function Stamp() {
                 <img className="w-14 mx-auto" alt="starboy" src="img/starStarboy.png" />
               </div>
               <div>
-                <img className="w-12 pt-2 mx-auto" alt="bstarboy" src="img/baldStarboy.png" />
+                <img
+                  className="w-12 pt-2 mx-auto brightness-75"
+                  alt="bstarboy"
+                  src="img/baldStarboy.png"
+                />
               </div>
               <div>
-                <img className="w-12 pt-2 mx-auto" alt="bstarboy" src="img/baldStarboy.png" />
+                <img
+                  className="w-12 pt-2 mx-auto brightness-75"
+                  alt="bstarboy"
+                  src="img/baldStarboy.png"
+                />
               </div>
               <div>
-                <img className="w-12 pt-2 mx-auto" alt="bstarboy" src="img/baldStarboy.png" />
+                <img
+                  className="w-12 pt-2 mx-auto brightness-75"
+                  alt="bstarboy"
+                  src="img/baldStarboy.png"
+                />
               </div>
               <div>
-                <img className="w-12 pt-2 mx-auto" alt="bstarboy" src="img/baldStarboy.png" />
+                <img
+                  className="w-12 pt-2 mx-auto brightness-75"
+                  alt="bstarboy"
+                  src="img/baldStarboy.png"
+                />
               </div>
             </div>
           </div>
         </div>
 
         <button
-          className="w-full h-16 bg-[#3EC6C9] rounded-md text-white mb-20 mt-16"
+          className="w-full h-10 bg-[#3EC6C9] rounded-md text-white mb-20 mt-10"
           onClick={moveToShop}
         >
           리워드 받기

@@ -10,12 +10,12 @@ function ResultDetail() {
   const makeReservation = () => {};
 
   return (
-    <div className="w-[100%]">
+    <div className="w-[100%] font-sans">
       <div className="w-10/12 mx-auto">
         <div className="grid grid-cols-2">
           <div className="pt-8">
             <span className="text-[#3EC6C9] font-bold text-3xl">부산</span>
-            <span className="text-[#898989] text-xs"> 으로의 ECO 여행</span>
+            <span className="text-[#898989] text-xs font-bold"> 으로의 ECO 여행</span>
           </div>
           <div className="pt-8 flex flex-row-reverse">
             <button onClick={moveToBack}>
@@ -23,7 +23,7 @@ function ResultDetail() {
             </button>
           </div>
         </div>
-        <div className="text-[18px] ml-1"> 8월 15일(수) ~ 8월 16일(목)</div>
+        <div className="text-[18px] ml-1 font-bold"> 7월 19일(수) ~ 7월 20일(목)</div>
       </div>
       <hr className="text-[#D2D2D2] border border-1" />
 
@@ -37,11 +37,11 @@ function ResultDetail() {
             />
           </div>
           <div className="grid grid-cols-12">
-            <div className="col-span-10 text-lg">부산 수영구 광안동 232-5</div>
+            <div className="col-span-10 text-[12x] font-bold mt-2">부산 수영구 광안동 232-5</div>
             <div className="w-10 col-span-1">
-              <img className="w-4 mt-1" alt="starRate" src="/img/star.png" />
+              <img className="w-4 mt-2" alt="starRate" src="/img/star.png" />
             </div>
-            <div className="col-span-1 w-10">4.6</div>
+            <div className="col-span-1 w-10 text-[12px] mt-2 font-bold">4.6</div>
           </div>
 
           <div className="text-[#898989] text-sm">
@@ -50,7 +50,7 @@ function ResultDetail() {
           </div>
 
           <div className="mb-6 mt-10">
-            <div className="text-lg">기본 정보</div>
+            <div className="text-[15px] font-bold">기본 정보</div>
             <ul className="text-[#898989] text-sm">
               <li>- 체크인 : 16:00</li>
               <li>- 체크아웃 : 11:00</li>

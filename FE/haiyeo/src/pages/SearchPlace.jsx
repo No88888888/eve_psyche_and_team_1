@@ -34,20 +34,20 @@ function SearchPlace() {
           </button>
         </div>
         <div className="text-[20px] mt-20">
-          <div className="my-4">
+          <div className="my-4 font-sans">
             <span>지구를 위한 </span>
-            <span className="text-[#3EC6C9]">초록색</span>
+            <span className="text-[#3EC6C9]  font-bold">초록색</span>
             <span> 여정,</span>
           </div>
-          <div className="my-4">
+          <div className="my-4 font-sans">
             <span>어디로 떠나볼까요?</span>
           </div>
         </div>
         <div className="grid grid-cols-12">
           <div className="w-full flex flex-row-reverse col-span-11 ">
-            <div className=" mt-16 w-full rounded-xl mb-16 bg-red-300">
+            <div className=" mt-16 w-full rounded-lg mb-16 border">
               <input
-                className="w-full h-10"
+                className="w-full h-10 font-sans rounded-lg border text-base"
                 type="text"
                 value={search}
                 onChange={onChange}
@@ -65,8 +65,8 @@ function SearchPlace() {
         <div>
           {/* <div>~~에서 ~~하는 ~~여행은 어때요?</div> */}
           {where === "부산" && (
-            <div>
-              <div className="text-[20px] mb-6 mt-24 flex flex-row-reverse">
+            <div className="font-sans">
+              <div className="text-[20px] mb-4 mt-24 flex flex-row-reverse">
                 <span className="text-[#3EC6C9] font-bold text-3xl">{where}!</span>
                 <span className="mr-4 pt-2">떠나요 </span>
               </div>
