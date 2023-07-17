@@ -15,16 +15,16 @@ function Stamp() {
   };
 
   return (
-    <div className="w-[512px]">
-      <div className="w-[512px] bg-[#F3FFC5] pb-10 pt-20">
+    <div className="w-[100%]">
+      <div className="w-[100%] bg-[#F3FFC5] pb-10 pt-20">
         <div>
           <img
-            className="w-[200px] absolute mt-[-40px] ml-6"
+            className="w-[150px] absolute mt-[-40px] ml-6"
             alt="hanaEarth"
             src="/img/hana_earth.png"
           />
         </div>
-        <div className="bg-white rounded-xl grid grid-cols-5 w-[460px] mx-auto pt-4 pb-2">
+        <div className="bg-white rounded-xl grid grid-cols-5 w-[90%] mx-auto pt-4 pb-2">
           <div className="col-span-2"></div>
           <div className="col-span-3">
             <div className="font-bold text-3xl">GREEN TRACE</div>
