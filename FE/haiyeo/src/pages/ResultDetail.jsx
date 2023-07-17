@@ -10,12 +10,12 @@ function ResultDetail() {
   const makeReservation = () => {};
 
   return (
-    <div className="w-[512px]">
+    <div className="w-[100%]">
       <div className="w-10/12 mx-auto">
         <div className="grid grid-cols-2">
           <div className="pt-8">
-            <span className="text-[#3EC6C9] font-bold text-4xl">부산</span>
-            <span className="text-[#898989]"> 으로의 ECO 여행</span>
+            <span className="text-[#3EC6C9] font-bold text-3xl">부산</span>
+            <span className="text-[#898989] text-xs"> 으로의 ECO 여행</span>
           </div>
           <div className="pt-8 flex flex-row-reverse">
             <button onClick={moveToBack}>
@@ -23,7 +23,7 @@ function ResultDetail() {
             </button>
           </div>
         </div>
-        <div className="text-2xl ml-1"> 8월 15일(수) ~ 8월 16일(목)</div>
+        <div className="text-[18px] ml-1"> 8월 15일(수) ~ 8월 16일(목)</div>
       </div>
       <hr className="text-[#D2D2D2] border border-1" />
 
@@ -31,43 +31,39 @@ function ResultDetail() {
         <div className="w-10/12 mx-auto">
           <div>
             <img
-              className="mx-auto border border-1 pt-5 h-72 w-[460px]"
+              className="mx-auto pt-5 h-40 w-[460px] rounded-lg"
               alt="상세페이지 사진"
-              src="/img/lodgeStar.png"
+              src="http://www.jadrak.com/web/img/about/05.jpg"
             />
           </div>
-          <div className="grid grid-cols-3">
-            <div className="col-span-2">부산 수영구 광안동 232-5</div>
-            <div>
-              <div clasName="col-span-1 grid grid-cols-2 bg-red-500">
-                <div className="col-span-1 bg-red-200 w-10">
-                  <img className="w-6" alt="starRate" src="/img/star.png" />
-                </div>
-                <div className="col-span-1 bg-slate-500 w-10">4.6</div>
-              </div>
+          <div className="grid grid-cols-12">
+            <div className="col-span-10 text-lg">부산 수영구 광안동 232-5</div>
+            <div className="w-10 col-span-1">
+              <img className="w-4 mt-1" alt="starRate" src="/img/star.png" />
             </div>
+            <div className="col-span-1 w-10">4.6</div>
           </div>
 
-          <div>
+          <div className="text-[#898989] text-sm">
             해운대 걸어서 5분, 국내 최초 친환경 숙박 인증 완료! 일출 보기 좋은 곳 가족 or 연인과
             함께하는 최고의 추억여행
           </div>
 
-          <div>
-            <div>기본 정보</div>
-            <ul>
-              <li>체크인 : 16:00</li>
-              <li>체크아웃 : 11:00</li>
-              <li>무료 Wi-Fi</li>
-              <li>대중교통 이용 가능</li>
-              <li>전 객실 금연</li>
+          <div className="mb-6 mt-10">
+            <div className="text-lg">기본 정보</div>
+            <ul className="text-[#898989] text-sm">
+              <li>- 체크인 : 16:00</li>
+              <li>- 체크아웃 : 11:00</li>
+              <li>- 무료 Wi-Fi</li>
+              <li>- 대중교통 이용 가능</li>
+              <li>- 전 객실 금연</li>
             </ul>
           </div>
 
-          <div>
+          <div className="pb-10">
             <div></div>
             <button
-              className="w-full h-16 bg-[#3EC6C9] rounded-md text-white"
+              className="w-full h-10 bg-[#3EC6C9] rounded-md text-white"
               onClick={makeReservation}
             >
               예약하기

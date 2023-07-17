@@ -10,6 +10,7 @@ import SearchPlace from "./pages/SearchPlace";
 import SearchSchedule from "./pages/SearchSchedule";
 import Result from "./pages/Result";
 import ResultDetail from "./pages/ResultDetail";
+import ProfileDetail from "./pages/ProfileDetail";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/stamp" Component={Stamp} />
         <Route path="/rewardshop" Component={RewardShop} />
         <Route path="/profile" Component={Profile} />
+        <Route path="/profile/detail" Component={ProfileDetail} />
         <Route path="/search" Component={Search} />
         <Route path="/search/place" Component={SearchPlace} />
         <Route path="/search/schedule" Component={SearchSchedule} />

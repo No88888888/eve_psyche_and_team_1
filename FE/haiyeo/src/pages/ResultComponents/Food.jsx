@@ -21,7 +21,13 @@ function Food() {
   return (
     <div className="w-11/12 mx-auto grid grid-cols-2">
       {alist.map((item, idx) => (
-        <CategoryBlocks name={item.name} msg={item.msg} image={item.image} rating={item.rating} />
+        <CategoryBlocks
+          key={idx}
+          name={item.name}
+          msg={item.msg}
+          image={item.image}
+          rating={item.rating}
+        />
       ))}
     </div>
   );

@@ -64,7 +64,7 @@ function SearchPlace() {
 
         <div>
           {/* <div>~~에서 ~~하는 ~~여행은 어때요?</div> */}
-          {where && (
+          {where === "부산" && (
             <div>
               <div className="text-[20px] mb-6 mt-24 flex flex-row-reverse">
                 <span className="text-[#3EC6C9] font-bold text-3xl">{where}!</span>
