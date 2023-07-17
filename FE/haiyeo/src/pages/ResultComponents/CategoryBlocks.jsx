@@ -1,8 +1,13 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 function CategoryBlocks() {
+  const navigate = useNavigate();
+  const moveToDetail = () => {
+    navigate("/result/detail");
+  };
   return (
-    <div className="mx-auto w-11/12 mt-6">
+    <div className="mx-auto w-11/12 mt-6" onClick={moveToDetail}>
       <div>
         <img className="rounded-xl" src="img/lodgeStar.png" alt="상품이미지" />
       </div>

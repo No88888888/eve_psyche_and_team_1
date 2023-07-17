@@ -9,6 +9,7 @@ import Search from "./pages/SearchStart";
 import SearchPlace from "./pages/SearchPlace";
 import SearchSchedule from "./pages/SearchSchedule";
 import Result from "./pages/Result";
+import ResultDetail from "./pages/ResultDetail";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/search/place" Component={SearchPlace} />
         <Route path="/search/schedule" Component={SearchSchedule} />
         <Route path="/result" Component={Result} />
+        <Route path="/result/detail" Component={ResultDetail} />
       </Routes>
       <BottomNav />
     </div>
