@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Hana2-Bold", "Hana2-Bold", "sans-serif"],
+        sans: ["Hana2-Regular", "Hana2-Regular", "sans-serif"],
       },
     },
   },

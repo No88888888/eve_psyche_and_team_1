@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "Hana2-Bold";
-  src: url("./assets/Hana2.0_TTF/Hana2-Bold.ttf");
+  font-family: "Hana2-Regular";
+  src: url("./assets/Hana2.0_TTF/Hana2-Regular.ttf");
 }
 
 body {
