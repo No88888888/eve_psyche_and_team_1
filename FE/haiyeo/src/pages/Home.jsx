@@ -6,7 +6,7 @@ import { faComment } from "@fortawesome/free-regular-svg-icons";
 
 function Home() {
   return (
-    <div className="w-[100%]">
+    <div className="w-[100%] font-sans">
       <div className="w-[100%] absolute h-[20%] bg-[#F3FFC5]"></div>
       <div>
         <img

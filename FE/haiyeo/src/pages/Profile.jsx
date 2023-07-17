@@ -5,7 +5,7 @@ import { faCircleCheck } from "@fortawesome/free-regular-svg-icons";
 
 function Profile() {
   return (
-    <>
+    <div className="font-sans">
       <div className="mt-[7%] ml-[7%] mb-[5%]">
         <span className="text-[#3EC6C9] text-2xl">hana_ti</span>
         <span className="text-2xl"> 님의 여행</span>
@@ -122,7 +122,7 @@ function Profile() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

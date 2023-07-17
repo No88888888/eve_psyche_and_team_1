@@ -3,7 +3,7 @@ import React, { useState } from "react";
 function RewardList() {
   const [modal, setModal] = useState(false);
   return (
-    <>
+    <div className="font-sans">
       <div className="bg-[#EFFFF9] rounded-xl w-[90%] h-[75px] mx-auto my-[5%] drop-shadow-md flex">
         <div className="my-auto ml-[3%]">
           <img src="/img/goods.jpg" alt="goods" className="w-[70px] h-[50px]" />
@@ -87,7 +87,7 @@ function RewardList() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

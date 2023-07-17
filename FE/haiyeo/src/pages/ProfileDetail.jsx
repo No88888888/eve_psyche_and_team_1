@@ -22,7 +22,7 @@ function ProfileDetail() {
     navigate(-1);
   };
   return (
-    <>
+    <div className="font-sans">
       <div className="absolute ml-[90%] mt-[2%]">
         <button onClick={moveToBack}>
           <img className="w-5" alt="뒤로가기" src="/img/arrow.png" />
@@ -62,7 +62,7 @@ function ProfileDetail() {
         </button>
       </div>
       <div className="w-11/12 mx-auto">{chooseList()}</div>
-    </>
+    </div>
   );
 }
 export default ProfileDetail;

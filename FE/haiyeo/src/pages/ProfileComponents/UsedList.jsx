@@ -2,7 +2,7 @@ import React from "react";
 
 function UsedList() {
   return (
-    <>
+    <div className="font-sans">
       <div className="bg-[#F9F9F9] rounded-xl w-[90%] h-[75px] mx-auto my-[5%] drop-shadow-md flex">
         <div className="my-auto ml-[3%]">
           <img
@@ -111,7 +111,7 @@ function UsedList() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
