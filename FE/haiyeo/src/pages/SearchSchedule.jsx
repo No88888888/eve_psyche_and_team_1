@@ -2,6 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import Calendar from "react-calendar";
+import "react-calendar/dist/Calendar.css";
 
 function SearchSchedule() {
   const [dateValue, setDateValue] = useState(new Date());
@@ -34,7 +35,7 @@ function SearchSchedule() {
           <Calendar onChange={setDateValue} value={dateValue} />
         </div>
 
-        <div className="mt-20">
+        <div className="mt-10 mb-20">
           <div></div>
           <button className="w-full h-10 bg-[#3EC6C9] rounded-md text-white" onClick={moveToResult}>
             출발
