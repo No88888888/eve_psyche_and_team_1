@@ -1,11 +1,22 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleCheck } from "@fortawesome/free-regular-svg-icons";
+import Loading from "../components/Loading";
 
 function Profile() {
+  // 로딩창 무지성 복붙
+  const [loading, setLoading] = useState(true);
+  function stop() {
+    setLoading(false);
+  }
+  useEffect(() => {
+    setTimeout(stop, 1000);
+  }, []);
+
   return (
     <div className="font-sans">
+      {loading ? <Loading /> : null}
       <div className="mt-[7%] ml-[7%] mb-[5%]">
         <span className="text-[#3EC6C9] text-2xl">hana_ti</span>
         <span className="text-2xl"> 님의 여행</span>
