@@ -123,6 +123,7 @@ function Home() {
         </div>
         <img
           className="bg-cover bg-center mt-[3%]"
+
           alt="ddareungi"
           src="/img/ddareungi.jpg"
         />
@@ -185,11 +186,13 @@ function Home() {
         </div>
         <div>
           <span className="ml-[4%] text-sm">
+
             diwlrma 님 외 5774명이 좋아합니다
           </span>
         </div>
         <div>
           <span className="ml-[4%] text-md">
+
             친환경 작물로 만든 친환경 피자 JMT
           </span>
         </div>

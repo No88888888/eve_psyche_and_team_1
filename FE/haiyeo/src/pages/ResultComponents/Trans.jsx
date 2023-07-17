@@ -4,13 +4,13 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 
 function Trans() {
-  const [list, setList] = useState();
+  const [alist, setList] = useState([]);
 
   useEffect(() => {
     axios
       .get("http://localhost:8080/api/transportation")
       .then(function (response) {
-        setList(response);
+        setList(response.data);
         console.log(response);
       })
       .catch(function (err) {
@@ -20,7 +20,7 @@ function Trans() {
 
   return (
     <div className="w-11/12 mx-auto ">
-      <div className="grid grid-cols-3 pt-8 pb-16">
+      <div className="grid grid-cols-3 pt-8 pb-10">
         <div className="bg-[#E3F9FA] rounded-xl h-20 w-5/6  mx-auto font-medium text-[15px]">
           <div className="ml-4 mt-4 z-50 absolute">
             <p>자전거</p>
@@ -51,8 +51,9 @@ function Trans() {
       <div>
         <div className="w-11/12 mx-auto font-semibold text-[15px]">전기차 렌트 한 눈에 보기</div>
         <div className="grid grid-cols-2">
-          {list.map((item, idx) => (
+          {alist.map((item, idx) => (
             <CategoryBlocks
+              key={idx}
               name={item.name}
               msg={item.msg}
               image={item.image}
