@@ -2,9 +2,15 @@ import React, { useState } from "react";
 
 function RewardList() {
   const [modal, setModal] = useState(false);
+  const [used, setUsed] = useState(false);
+  const openModal = () => setModal(true);
+  const closeModal = () => setModal(false);
   return (
     <div className="font-sans">
-      <div className="bg-[#EFFFF9] rounded-xl w-[90%] h-[75px] mx-auto my-[5%] drop-shadow-md flex">
+      <div
+        className="bg-[#EFFFF9] rounded-xl w-[90%] h-[75px] mx-auto my-[5%] drop-shadow-md flex"
+        onClick={openModal}
+      >
         <div className="my-auto ml-[3%]">
           <img src="/img/goods.jpg" alt="goods" className="w-[70px] h-[50px]" />
         </div>
@@ -87,6 +93,25 @@ function RewardList() {
           </div>
         </div>
       </div>
+      {modal && (
+        <div className="w-[100%] absolute bottom-0 left-0 bg-[#666666]">
+          <div>
+            <img src="/img/goods.jpg" alt="goods" />
+          </div>
+          <div>
+            <span>친환경 화장품 교환권</span>
+          </div>
+          <div>
+            <img src="/img/barcode.png" alt="barcode" />
+          </div>
+          <div>
+            <span>쿠폰번호 : 3e4f22sd6eh69qs41d</span>
+          </div>
+          <button className="mb-[30%]" onClick={closeModal}>
+            사용완료
+          </button>
+        </div>
+      )}
     </div>
   );
 }
