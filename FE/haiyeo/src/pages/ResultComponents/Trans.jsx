@@ -20,7 +20,7 @@ function Trans() {
 
   return (
     <div className="w-11/12 mx-auto ">
-      <div className="grid grid-cols-3 pt-8 pb-16">
+      <div className="grid grid-cols-3 pt-8 pb-10">
         <div className="bg-[#E3F9FA] rounded-xl h-20 w-5/6  mx-auto font-medium text-[15px]">
           <div className="ml-4 mt-4 z-50 absolute">
             <p>자전거</p>
@@ -53,6 +53,7 @@ function Trans() {
         <div className="grid grid-cols-2">
           {alist.map((item, idx) => (
             <CategoryBlocks
+              key={idx}
               name={item.name}
               msg={item.msg}
               image={item.image}
